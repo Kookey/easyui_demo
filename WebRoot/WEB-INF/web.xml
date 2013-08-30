@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <servlet>
+  	<servlet-name>addUserServlet</servlet-name>
+  	<servlet-class>com.steel.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addUserServlet</servlet-name>
+  	<url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ListUserServlet</servlet-name>
+  	<servlet-class>com.steel.servlet.ListUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ListUserServlet</servlet-name>
+  	<url-pattern>/listUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>editUserServlet</servlet-name>
+  	<servlet-class>com.steel.servlet.EditUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>editUserServlet</servlet-name>
+  	<url-pattern>/editUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>deleteUserServlet</servlet-name>
+  	<servlet-class>com.steel.servlet.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>deleteUserServlet</servlet-name>
+  	<url-pattern>/deleteUser</url-pattern>
+  </servlet-mapping>
+</web-app>
